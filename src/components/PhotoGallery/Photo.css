@@ -14,16 +14,19 @@
 }
 
 .photo-image-big{
-    width: 700px;
-    height: 400px;
+    width: 600px;
+    height: 350px;
 }
 
 .photo-text-container{
     background-color: white;
-    min-width: 600px;
     margin-left: -15px;
     border-radius: 0px 10px 10px 0px;
     font-family: "Mea+Culpa", cursive;
+    flex: 1;              
+    display: flex;        
+    flex-direction: column;
+    justify-content: center; 
 }
 
 
