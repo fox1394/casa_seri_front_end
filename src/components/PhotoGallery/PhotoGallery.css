@@ -1,0 +1,36 @@
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 5px;
+  overflow: scroll;
+}
+
+.photogallery-title{
+    font-size: x-large;
+    text-align: center;
+    margin: 0px;
+}
+
+/* Tablet */
+@media (max-width: 1920px) {
+  .photos-grid {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .photos-grid {
+    width: 900px;
+  }
+}
+
+/* SmartPhone portrait */
+@media (max-width: 480px) {
+  .photos-grid {
+      margin-top: 3px;
+  }
+}
+
+

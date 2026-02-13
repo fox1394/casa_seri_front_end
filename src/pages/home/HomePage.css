@@ -1,0 +1,36 @@
+.homepage {
+  position: relative;
+  min-height: 100vh;   
+  overflow-y: auto; 
+  scrollbar-width: none;   
+}
+
+/* VIDEO */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* riempie tutto senza deformare */
+  z-index: -1;
+}
+
+/* Overlay scuro (opzionale ma consigliato) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* regola opacità */
+  z-index: -1;
+}
+
+/* Contenuto sopra */
+.content {
+  position: relative;
+  z-index: 2;
+  color: white; /* se vuoi testo chiaro */
+  overflow: scroll;
+}

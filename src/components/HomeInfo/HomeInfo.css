@@ -1,0 +1,88 @@
+.home-info-container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.home-info-title{
+    font-size: x-large;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: "Mea+Culpa", cursive;
+}
+
+.home-info-subtitle{
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    position: relative;
+    margin: 0px;
+    font-family: "Mea+Culpa", cursive;
+}
+
+.home-info-booknow{
+    display: flex;
+    background-color: #00000000;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.booking-button{
+    text-align: center;
+    color: white;
+    float: right;
+    font-size: medium;
+    font-weight: bold;
+    margin-right: 10px;
+    width: auto;
+    padding: 10px 5px;
+    background-color: rgb(20, 129, 224);
+}   
+
+.home-info-detail{
+    font-family: "Mea+Culpa", cursive;
+    height: auto;
+    font-size: large;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.buttonMorePhoto{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 128, 255);
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px){
+   .home-info-container{
+          top: 250px;
+          margin: 0 auto;
+    }
+    
+    .home-info-detail{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .home-info-container{
+      width: 370px;
+      margin: 0;
+      left: 10px;
+    }
+}
+
+
+

@@ -1,0 +1,81 @@
+.booking-container{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    background-color: #6a746a;
+    width: fit-content;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: rgb(80, 78, 78);
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.booking-input{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: medium;
+    margin-right: 10px;
+    border-radius: 5px;
+    border:0;
+    outline:0;
+    cursor: pointer;
+}
+
+.booking-selector{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: medium;
+    margin-right: 10px;
+    border-radius: 5px;
+    border:0;
+    outline:0;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.booking-button{
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: rgb(6, 151, 103);
+}
+
+@media (max-width: 800px) {
+    .booking-container{
+        max-width: 600px;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 40px;
+    }
+
+    .booking-input{
+        padding: 3px;
+        margin-right: 3px;
+        font-size: x-small;
+    }
+
+    .booking-selector{
+        padding: 3px;
+        margin-right: 2px;
+        min-width: 140px;
+        font-size: x-small;
+    }
+
+    .booking-button{
+        font-size: x-small;
+        margin: 0 auto;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px){
+    .booking-container{
+        width: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

@@ -1,0 +1,59 @@
+.navbarcontainer {
+    background-color: #00000000;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 190px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.navbarcontainer.hidden  {
+    display: none;
+}
+
+.navigation-items-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+.navigation-bar-item{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar-item.selected{
+    background-color: blueviolet;
+}
+
+.navigation-bar-item-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media (max-width: 400px){
+    .navbarcontainer {
+        top: 110px;
+    }
+
+    .navigation-bar-item-text{
+        font-size: x-small;
+        height: 30px;
+        align-content: center;
+    }
+}

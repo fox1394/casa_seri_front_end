@@ -1,0 +1,65 @@
+.slide-container{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;      /* sempre in fondo al container */
+  left: 0;
+}
+
+.animated-section {
+  width: 50vw;
+  height: fit-content;
+  display: flex;
+  background-color: brown;
+  overflow: hidden;
+}
+
+/* IMMAGINE */
+.image-container {
+  flex: 1;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* TESTO */
+.text-container {
+  flex: 1;
+  color: #111;
+  justify-content: center;
+
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+  height: fit-content;
+  width: auto ;
+}
+
+/* STATO VISIBILE */
+.animated-section.visible .image-container {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animated-section.visible .text-container {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .animated-section {
+    flex-direction: column;
+  }
+
+  .image-container,
+  .text-container {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
