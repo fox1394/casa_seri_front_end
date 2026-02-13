@@ -1,3 +1,5 @@
+import { getUUID } from "./utils";
+
 export function readAreas() {
   const modules = import.meta.glob("../assets/areas/**/main*");
   const elements = Object.keys(modules);
@@ -5,9 +7,9 @@ export function readAreas() {
     const areaDescription = getAreaDescription(area);
     return {
       src: getFolderName(area),
-      id: crypto.randomUUID(),
+      id: getUUID(),
       description: getAreaDescription(area),
-      resoruce: getAreaDescriptionSource(areaDescription)
+      resoruce: getAreaDescriptionSource(areaDescription),
     };
   });
   return areas;
