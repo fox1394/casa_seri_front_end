@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import '../../Language';
 
 // Quale chiave usare in localStorage
 const COOKIE_KEY = "morris_body_massage_cookie_consent";
