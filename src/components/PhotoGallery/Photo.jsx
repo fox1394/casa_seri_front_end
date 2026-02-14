@@ -14,7 +14,7 @@ export function Photo({ photo }) {
   return (
     <>
       <div className="photo-container" onClick={() => setOpen(true)}>
-        <img className="photo-image" src={sourceImage} alt="image"></img>
+        <img className="photo-image" src={sourceImage} alt={sourceImage}></img>
         <div className="photo-text-container">
           <div className="photo-text">{t(photo.resoruce)}</div>
           <div className="photo-text-detail">
