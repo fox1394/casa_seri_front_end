@@ -5,8 +5,16 @@ import "../../language";
 import PhotoDetail from "../PhotoDetail/PhotoDetail";
 import { getAreaDetail } from "../../utils/utils";
 
+// importa TUTTE le immagini una volta sola
+const images = import.meta.glob("../../assets/areas/**/*", {
+  eager: true,
+});
+
 export function Photo({ photo }) {
-  const sourceImage = `../../src/assets/areas/${photo.src}`;
+  
+  const imagePath = `../../assets/areas/${photo.src}`;
+  const sourceImage = images[imagePath]?.default;
+  
   console.log(sourceImage);
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
