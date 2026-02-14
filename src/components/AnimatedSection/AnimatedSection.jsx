@@ -25,7 +25,7 @@ export function AnimatedSection({ slides }) {
   return (
     <div className="xslide-container" ref={sectionRef}>
       {slides.map((slide) => {
-        const sourceImage = `../../src/assets/areas/${slide.src}`;
+        const sourceImage = `../../../assets/areas/${slide.src}`;
         return (
           <section
             ref={sectionRef}
@@ -38,7 +38,6 @@ export function AnimatedSection({ slides }) {
             <div className="text-container">
               <h3>{slide.description}</h3>
             </div>
-
           </section>
         );
       })}

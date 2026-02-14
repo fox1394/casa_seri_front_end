@@ -7,6 +7,7 @@ import { PhotoGallery } from "../../components/PhotoGallery/PhotoGallery";
 import CookieConsentPopup from "../../components/CookiesPopup/CookieConsentPopup";
 import Map from "../../components/Map/Map";
 import { BookPanel } from "../../components/BookPanel/BookPanel";
+import video from "../../assets/videos/animation_casa_seri.mp4"
 
 export default function HomePage({ screenSize }) {
   const pictures = readAreas();
@@ -65,7 +66,7 @@ export default function HomePage({ screenSize }) {
         {/* VIDEO BACKGROUND */}
         <video className="video-bg" autoPlay loop muted playsInline>
           <source
-            src="../src/assets/videos/animation_casa_seri.mp4"
+            src={video}
             type="video/mp4"
           />
           Il tuo browser non supporta il tag video.
