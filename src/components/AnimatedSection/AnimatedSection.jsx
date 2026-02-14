@@ -4,7 +4,6 @@ import "./AnimatedSection.css";
 export function AnimatedSection({ slides }) {
   const sectionRef = useRef(null);
   const [visible, setVisible] = useState(false);
-  console.log(slides);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -23,9 +22,10 @@ export function AnimatedSection({ slides }) {
   }, []);
 
   return (
-    <div className="xslide-container" ref={sectionRef}>
+    <div className="slide-container" ref={sectionRef}>
       {slides.map((slide) => {
-        const sourceImage = `../../../assets/areas/${slide.src}`;
+        console.log(slide);
+        const sourceImage = `/src/assets/areas/${slide.src}`;
         return (
           <section
             ref={sectionRef}
@@ -33,7 +33,7 @@ export function AnimatedSection({ slides }) {
             key={slide.description}
           >
             <div className="image-container">
-              <img src={sourceImage} alt="Example" />
+              <img src={sourceImage} alt="sourceImage" />
             </div>
             <div className="text-container">
               <h3>{slide.description}</h3>

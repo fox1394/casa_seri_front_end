@@ -1,7 +1,7 @@
 import { getUUID } from "./utils";
 
 export function readAreas() {
-  const modules = import.meta.glob("../assets/areas/**/main*");
+  const modules = import.meta.glob("/src/assets/areas/**/main*");
   const elements = Object.keys(modules);
   const areas = elements.map((area) => {
     const areaDescription = getAreaDescription(area);
@@ -16,7 +16,7 @@ export function readAreas() {
 }
 
 function getFolderName(path) {
-  const absolutePath = path.replace("../assets/areas/", "");
+  const absolutePath = path.replace("/src/assets/areas/", "");
   return absolutePath;
 }
 

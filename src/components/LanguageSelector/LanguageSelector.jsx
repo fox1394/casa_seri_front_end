@@ -45,7 +45,6 @@ const LanguageSelector = () => {
     setOpen(false);
 
     // Qui puoi collegare i18n.changeLanguage(lang.code)
-    console.log("Lingua selezionata:", lang.code);
     i18n.changeLanguage(lang.code);
   };
 

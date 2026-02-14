@@ -10,7 +10,6 @@ function App() {
   const storedLanguageAbbreviation = window.sessionStorage.getItem(
     "LanguageAbbreviation",
   );
-  console.log(storedLanguageAbbreviation);
   i18n.changeLanguage(storedLanguageAbbreviation);
 
   return (

@@ -16,10 +16,8 @@ export default function HomePage({ screenSize }) {
   useEffect(() => {
     const handleWheel = (event) => {
       if (event.deltaY > 0) {
-        console.log("Scroll verso il BASSO ⬇️");
         setHeaderVisible(false);
       } else if (event.deltaY < 0) {
-        console.log("Scroll verso l'ALTO ⬆️");
         setHeaderVisible(true);
       }
     };
@@ -35,10 +33,8 @@ export default function HomePage({ screenSize }) {
       const deltaY = touchStartY.current - currentY;
 
       if (deltaY > 0) {
-        console.log("Scroll DOWN (touch)");
         setHeaderVisible(false);
       } else if (deltaY < 0) {
-        console.log("Scroll UP (touch)");
         setHeaderVisible(true);
       }
 

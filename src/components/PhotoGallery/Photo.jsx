@@ -7,6 +7,7 @@ import { getAreaDetail } from "../../utils/utils";
 
 export function Photo({ photo }) {
   const sourceImage = `../../src/assets/areas/${photo.src}`;
+  console.log(sourceImage);
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
@@ -16,9 +17,11 @@ export function Photo({ photo }) {
         <img className="photo-image" src={sourceImage} alt="image"></img>
         <div className="photo-text-container">
           <div className="photo-text">{t(photo.resoruce)}</div>
-          <div className="photo-text-detail">{getAreaDetail(t(photo.resoruce), t)}</div>
+          <div className="photo-text-detail">
+            {getAreaDetail(t(photo.resoruce), t)}
+          </div>
         </div>
-        
+
         <PhotoDetail
           isOpen={open}
           onClose={() => setOpen(false)}
